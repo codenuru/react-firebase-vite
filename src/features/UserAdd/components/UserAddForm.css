@@ -1,0 +1,5 @@
+.form-error,
+.error {
+  color: var(--poppy);
+  font-weight: 500;
+}

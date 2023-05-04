@@ -1,0 +1,66 @@
+.profile-container {
+  padding: 1.2em;
+  max-width: 810px;
+  min-height: 10em;
+  background-color: var(--header);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  padding: 20px;
+  box-shadow: 0 1px 3px #ddd;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-single {
+  display: flex;
+}
+
+.profile-title,
+.detail-data {
+  font-weight: 100;
+  font-size: 0.7em;
+}
+
+.profile-single .profile-image {
+  margin-right: 1em;
+}
+
+.profile-single .profile-details {
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+.profile-single .profile-details-contact {
+  margin-top: 2em;
+}
+
+.profile-single .profile-detail {
+  line-height: 1.2;
+}
+
+.profile-single .profile-detail .fa {
+  text-align: center;
+}
+
+.profile-single .profile-detail .detail-label,
+.profile-single .profile-detail .detail-data {
+  display: inline-block;
+}
+
+.profile-single .profile-detail .detail-label {
+  font-weight: bold;
+  width: 150px;
+}
+
+.profile-single-panel .profile-name {
+  font-size: 1.5em;
+}

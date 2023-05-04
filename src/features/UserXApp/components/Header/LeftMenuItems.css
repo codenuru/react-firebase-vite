@@ -1,0 +1,47 @@
+.menu-left a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0;
+  transition: color 0.35s ease;
+  color: var(--header-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--action-color) !important;
+}
+
+.menu-left a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0s ease, background 0.35s ease;
+}
+
+.menu-left a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: var(--header-active-link);
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover::before {
+  width: 100%;
+  background: var(--action-color);
+  transition: width 0.35s ease;
+}
+
+.menu-left a:hover::after {
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
